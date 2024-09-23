@@ -1,0 +1,145 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Sección principal */
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1e73be;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+}
+
+/* Estilo para las especificaciones */
+li {
+    margin: 10px 0;
+}
+
+/* Estilo para las imágenes */
+section img {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para el video */
+video {
+    border: 2px solid #1e73be;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Efectos de hover en enlaces */
+a {
+    color: #1e73be;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0a4a8b;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #1e73be;
+}
+
+/* Efecto para títulos */
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #1e73be;
+    margin: 10px 0;
+}
+
+/* Animación para el encabezado */
+header h1 {
+    animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    section img {
+        width: 100%;
+    }
+}
