@@ -1,0 +1,200 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+    color: #1c1c1c;
+    animation: fadeIn 2s ease-in;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #555;
+    animation: fadeIn 2.5s ease-in;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #777;
+}
+
+p, ul, table {
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f7f7f7;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+ul li:hover {
+    background-color: #e3e3e3;
+    transform: translateY(-3px);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+th {
+    background-color: #555;
+    color: white;
+}
+
+th:hover {
+    background-color: #666;
+}
+
+button {
+    background-color: #1c87c9;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Colores específicos de marcas */
+h2:has(img[alt="Chevrolet"]) {
+    color: #006db6;
+}
+
+h2:has(img[alt="Toyota"]) {
+    color: #eb0a1e;
+}
+
+h2:has(img[alt="Ford"]) {
+    color: #003399;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: scaleUp 1s ease-in-out;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Formularios */
+form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #1c87c9;
+    outline: none;
+}
+
+/* Estilos para botones en formularios */
+form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+form button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
