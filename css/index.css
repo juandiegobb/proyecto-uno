@@ -3,31 +3,44 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #bbc9dc; /* Fondo azul claro */
     color: #333;
 }
 
 h1, h2, h3, h4 {
     text-align: center;
     font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Transición suave de color */
 }
 
 h1 {
     font-size: 3em;
-    color: #1c1c1c;
+    color: #d20606; /* aqui se hace el cambio de color xd */
     animation: fadeIn 2s ease-in;
+}
+
+h1:hover {
+    color: #018f48; /* Verde más oscuro al hacer hover */
 }
 
 h2 {
     font-size: 2em;
     margin-top: 20px;
-    color: #555;
+    color: #d10202; /* Azul claro */
     animation: fadeIn 2.5s ease-in;
+}
+
+h2:hover {
+    color: #01579b; /* Azul más oscuro al hacer hover */
 }
 
 h3 {
     font-size: 1.5em;
-    color: #777;
+    color: #388e3c; /* Verde mediano */
+}
+
+h3:hover {
+    color: #1b5e20; /* Verde más intenso al hacer hover */
 }
 
 p, ul, table {
@@ -37,13 +50,14 @@ p, ul, table {
     line-height: 1.6;
 }
 
+/* Listas */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
 ul li {
-    background: #f7f7f7;
+    background: #ffffff; 
     margin: 10px 0;
     padding: 10px;
     border-radius: 8px;
@@ -51,10 +65,11 @@ ul li {
 }
 
 ul li:hover {
-    background-color: #e3e3e3;
+    background-color: #80deea; /* Fondo azul más vibrante al hacer hover */
     transform: translateY(-3px);
 }
 
+/* Tablas */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -74,14 +89,15 @@ th, td {
 }
 
 th {
-    background-color: #555;
+    background-color: #0288d1; 
     color: white;
 }
 
 th:hover {
-    background-color: #666;
+    background-color: #0277bd; 
 }
 
+/* Botones */
 button {
     background-color: #1c87c9;
     border: none;
@@ -192,8 +208,19 @@ form button[type="submit"]:active {
     transform: scale(0.98);
 }
 
-footer {
+.centrar-link{
+    display: block; 
     text-align: center;
+    font-size: 1.2em;
+    margin: 0 auto; 
+    color: #1c36c9;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+footer {
+    text-align: center ;
     padding: 10px;
     font-size: 0.9em;
     color: #666;
